@@ -1,0 +1,11 @@
+<%- layout('layout/main') %>
+
+<form action="/add-post" method="post">
+
+    <input type="text" placeholder="Заголовок" name="title" id="" required>
+    <input type="text" name="img" id="" placeholder="URL картинки">
+    <textarea name="content" id="" cols="30">Текст статьи</textarea>
+
+    <button>Добавить пост</button>
+
+</form>
