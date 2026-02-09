@@ -1,0 +1,21 @@
+<% layout('layout/main') %>
+
+<h2>Главаня страница</h2>
+<hr>
+
+<div class="posts">
+
+    <% posts.forEach(post => { %>
+        <div class="root">
+            <img src="<%= post.img %>" alt="">
+            <h3> <%= post.title %></h3>
+            <p> <%= post.content %> </p>
+            <a href="/views/<% post.id %>">Читать подробнее</a>
+        </div>
+
+
+    <% }); %>
+
+
+
+</div>
